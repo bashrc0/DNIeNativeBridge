@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52F246E2308F6CF50028C039 /* CryptoTokenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F246E1308F6CF40028C039 /* CryptoTokenKit.framework */; };
+		52F246E5308F6CF50028C039 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F246E4308F6CF50028C039 /* Security.framework */; };
+		52F246EE308F6CF50028C039 /* DNIeTokenExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 52F246DF308F6CF40028C039 /* DNIeTokenExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52F246EC308F6CF50028C039 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52F246C4308F6CB10028C039 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52F246DE308F6CF40028C039;
+			remoteInfo = DNIeTokenExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52F246F3308F6CF50028C039 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				52F246EE308F6CF50028C039 /* DNIeTokenExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		52F246CC308F6CB10028C039 /* DNIeNativeBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNIeNativeBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F246DF308F6CF40028C039 /* DNIeTokenExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DNIeTokenExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F246E1308F6CF40028C039 /* CryptoTokenKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoTokenKit.framework; path = System/Library/Frameworks/CryptoTokenKit.framework; sourceTree = SDKROOT; };
+		52F246E4308F6CF50028C039 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		52F246EF308F6CF50028C039 /* Exceptions for "DNIeTokenExtension" folder in "DNIeTokenExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 52F246DE308F6CF40028C039 /* DNIeTokenExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		52F246CE308F6CB10028C039 /* DNIeNativeBridge */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DNIeNativeBridge;
+			sourceTree = "<group>";
+		};
+		52F246E3308F6CF50028C039 /* DNIeTokenExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				52F246EF308F6CF50028C039 /* Exceptions for "DNIeTokenExtension" folder in "DNIeTokenExtension" target */,
+			);
+			path = DNIeTokenExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52F246C9308F6CB10028C039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F246DC308F6CF40028C039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F246E2308F6CF50028C039 /* CryptoTokenKit.framework in Frameworks */,
+				52F246E5308F6CF50028C039 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52F246C3308F6CB10028C039 = {
+			isa = PBXGroup;
+			children = (
+				52F246CE308F6CB10028C039 /* DNIeNativeBridge */,
+				52F246E3308F6CF50028C039 /* DNIeTokenExtension */,
+				52F246E0308F6CF40028C039 /* Frameworks */,
+				52F246CD308F6CB10028C039 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52F246CD308F6CB10028C039 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52F246CC308F6CB10028C039 /* DNIeNativeBridge.app */,
+				52F246DF308F6CF40028C039 /* DNIeTokenExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52F246E0308F6CF40028C039 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52F246E1308F6CF40028C039 /* CryptoTokenKit.framework */,
+				52F246E4308F6CF50028C039 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52F246CB308F6CB10028C039 /* DNIeNativeBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52F246D8308F6CB60028C039 /* Build configuration list for PBXNativeTarget "DNIeNativeBridge" */;
+			buildPhases = (
+				52F246C8308F6CB10028C039 /* Sources */,
+				52F246C9308F6CB10028C039 /* Frameworks */,
+				52F246CA308F6CB10028C039 /* Resources */,
+				52F246F3308F6CF50028C039 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52F246ED308F6CF50028C039 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				52F246CE308F6CB10028C039 /* DNIeNativeBridge */,
+			);
+			name = DNIeNativeBridge;
+			packageProductDependencies = (
+			);
+			productName = DNIeNativeBridge;
+			productReference = 52F246CC308F6CB10028C039 /* DNIeNativeBridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52F246DE308F6CF40028C039 /* DNIeTokenExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52F246F0308F6CF50028C039 /* Build configuration list for PBXNativeTarget "DNIeTokenExtension" */;
+			buildPhases = (
+				52F246DB308F6CF40028C039 /* Sources */,
+				52F246DC308F6CF40028C039 /* Frameworks */,
+				52F246DD308F6CF40028C039 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				52F246E3308F6CF50028C039 /* DNIeTokenExtension */,
+			);
+			name = DNIeTokenExtension;
+			packageProductDependencies = (
+			);
+			productName = DNIeTokenExtension;
+			productReference = 52F246DF308F6CF40028C039 /* DNIeTokenExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52F246C4308F6CB10028C039 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					52F246CB308F6CB10028C039 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					52F246DE308F6CF40028C039 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 52F246C7308F6CB10028C039 /* Build configuration list for PBXProject "DNIeNativeBridge" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52F246C3308F6CB10028C039;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 52F246CD308F6CB10028C039 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52F246CB308F6CB10028C039 /* DNIeNativeBridge */,
+				52F246DE308F6CF40028C039 /* DNIeTokenExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52F246CA308F6CB10028C039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F246DD308F6CF40028C039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52F246C8308F6CB10028C039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F246DB308F6CF40028C039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52F246ED308F6CF50028C039 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52F246DE308F6CF40028C039 /* DNIeTokenExtension */;
+			targetProxy = 52F246EC308F6CF50028C039 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		52F246D6308F6CB60028C039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52F246D7308F6CB60028C039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		52F246D9308F6CB60028C039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DNIeNativeBridge/DNIeNativeBridge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DNIeNativeBridge/DNIeNativeBridge-Bridging-Header.h";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../ThirdParty/BuildInputs/OpenSC",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/OpenSC/src",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/include/openpace",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/include/openssl",
+				);
+				OTHER_LDFLAGS = (
+					"$(SRCROOT)/../ThirdParty/BuildInputs/lib/libopensc.a",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/lib/libeac.a",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/lib/libcrypto.a",
+					"-lz",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Creado por RPastor y GPT";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.7;
+				PRODUCT_BUNDLE_IDENTIFIER = es.local.DNIeNativeBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		52F246DA308F6CB60028C039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DNIeNativeBridge/DNIeNativeBridge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DNIeNativeBridge/DNIeNativeBridge-Bridging-Header.h";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../ThirdParty/BuildInputs/OpenSC",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/OpenSC/src",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/include/openpace",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/include/openssl",
+				);
+				OTHER_LDFLAGS = (
+					"$(SRCROOT)/../ThirdParty/BuildInputs/lib/libopensc.a",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/lib/libeac.a",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/lib/libcrypto.a",
+					"-lz",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Creado por RPastor y GPT";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.7;
+				PRODUCT_BUNDLE_IDENTIFIER = es.local.DNIeNativeBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		52F246F1308F6CF50028C039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_INT_CONVERSION = NO;
+				CODE_SIGN_ENTITLEMENTS = DNIeTokenExtension/DNIeTokenExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../ThirdParty/BuildInputs/OpenSC",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/OpenSC/src",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/include/openpace",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/include/openssl",
+				);
+				INFOPLIST_FILE = DNIeTokenExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "DNIe Native Bridge";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.7;
+				OTHER_LDFLAGS = (
+					"$(SRCROOT)/../ThirdParty/BuildInputs/lib/libopensc.a",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/lib/libeac.a",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/lib/libcrypto.a",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = es.local.DNIeNativeBridge.DNIeTokenExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		52F246F2308F6CF50028C039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_INT_CONVERSION = NO;
+				CODE_SIGN_ENTITLEMENTS = DNIeTokenExtension/DNIeTokenExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../ThirdParty/BuildInputs/OpenSC",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/OpenSC/src",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/include/openpace",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/include/openssl",
+				);
+				INFOPLIST_FILE = DNIeTokenExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "DNIe Native Bridge";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.7;
+				OTHER_LDFLAGS = (
+					"$(SRCROOT)/../ThirdParty/BuildInputs/lib/libopensc.a",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/lib/libeac.a",
+					"$(SRCROOT)/../ThirdParty/BuildInputs/lib/libcrypto.a",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = es.local.DNIeNativeBridge.DNIeTokenExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52F246C7308F6CB10028C039 /* Build configuration list for PBXProject "DNIeNativeBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F246D6308F6CB60028C039 /* Debug */,
+				52F246D7308F6CB60028C039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52F246D8308F6CB60028C039 /* Build configuration list for PBXNativeTarget "DNIeNativeBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F246D9308F6CB60028C039 /* Debug */,
+				52F246DA308F6CB60028C039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52F246F0308F6CF50028C039 /* Build configuration list for PBXNativeTarget "DNIeTokenExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F246F1308F6CF50028C039 /* Debug */,
+				52F246F2308F6CF50028C039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52F246C4308F6CB10028C039 /* Project object */;
+}

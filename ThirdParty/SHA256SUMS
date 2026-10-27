@@ -1,0 +1,5 @@
+a46a58c681b9f509b88d506e8b12496ab3ccb60f322012337f27c6f2f4a72c57  ThirdParty/Sources/OpenPACE-1.1.4.tar.gz
+380711e28496b1a0c13f1f26802b94b8a588c1966a190d31de388d3dea4b5c83  ThirdParty/Sources/OpenSSL-3.5.tar.gz
+f9fbc7904007560584a224ec13bb99f2293195ff99de6832783f514fa8fb18f5  ThirdParty/BuildInputs/lib/libcrypto.a
+f7650c45969702e5a9a084dadeb621c17b8408557b4c8165a041ff7b0b37ab94  ThirdParty/BuildInputs/lib/libeac.a
+b77dcf98d7ee2e65fb278d7fb67243bf3750fbcacce0100ad96ca0cf73e699ca  ThirdParty/BuildInputs/lib/libopensc.a

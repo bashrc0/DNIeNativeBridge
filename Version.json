@@ -1,0 +1,10 @@
+{
+  "host": {
+    "version": "1.0.7",
+    "build": "7"
+  },
+  "extension": {
+    "version": "1.0.7",
+    "build": "6"
+  }
+}

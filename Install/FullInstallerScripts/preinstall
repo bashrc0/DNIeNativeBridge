@@ -1,0 +1,10 @@
+#!/bin/bash
+set -euo pipefail
+if [[ "${3:-/}" != "/" ]]; then
+    echo "Instala DNIeNativeBridge en el disco de arranque actual." >&2
+    exit 1
+fi
+if /usr/bin/pgrep -x DNIeNativeBridge >/dev/null; then
+    echo "Cierra DNIeNativeBridge antes de continuar." >&2
+    exit 1
+fi

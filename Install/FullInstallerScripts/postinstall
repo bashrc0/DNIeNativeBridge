@@ -1,0 +1,16 @@
+#!/bin/bash
+set -euo pipefail
+DNIE_APP="/Applications/DNIeNativeBridge.app"
+DNIE_EXTENSION="$DNIE_APP/Contents/PlugIns/DNIeTokenExtension.appex"
+DNIE_PLUGIN_ID="es.local.DNIeNativeBridge.DNIeTokenExtension"
+if [[ "${3:-/}" != "/" ]]; then exit 1; fi
+/usr/bin/codesign --verify --deep --strict "$DNIE_APP"
+/usr/bin/touch "$DNIE_APP"
+DNIE_USER=$(/usr/bin/stat -f '%Su' /dev/console)
+if [[ "$DNIE_USER" == "root" || "$DNIE_USER" == "loginwindow" ]]; then
+    echo "Abre una sesión de usuario antes de registrar la extensión." >&2
+    exit 1
+fi
+DNIE_UID=$(/usr/bin/id -u "$DNIE_USER")
+/bin/launchctl asuser "$DNIE_UID" /usr/bin/sudo -u "$DNIE_USER" /usr/bin/pluginkit -a "$DNIE_EXTENSION"
+/bin/launchctl asuser "$DNIE_UID" /usr/bin/sudo -u "$DNIE_USER" /usr/bin/pluginkit -e use -i "$DNIE_PLUGIN_ID"

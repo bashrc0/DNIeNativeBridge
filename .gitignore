@@ -1,0 +1,32 @@
+# Local builds and packages (dependency archives in ThirdParty are intentional)
+/build/
+/Build/
+/BuildUI/
+/dist/
+/DerivedData/
+*.app/
+*.appex/
+*.pkg
+*.dmg
+*.dSYM/
+*.o
+*.lo
+*.log
+*.xcuserstate
+xcuserdata/
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+*.pfx
+*.key
+*.pem
+*.crt
+*.p12
+*.mobileprovision
+*.provisionprofile
+*.keychain*
+*.cer
+*.der
+# Do not ignore ThirdParty/BuildInputs/lib/*.a: Xcode uses these libraries.
