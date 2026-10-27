@@ -42,8 +42,8 @@ Este comando genera una compilación con firma ad hoc para comprobar la construc
 
 El código propio y las adaptaciones se ofrecen bajo **GPL-3.0-or-later**; se conservan los avisos y licencias de los componentes originales. Véanse [LICENSE](LICENSE), [NOTICE.md](NOTICE.md) y [ThirdParty/README.md](ThirdParty/README.md). Las bibliotecas estáticas necesarias están incluidas junto con sus fuentes y versiones; [Scripts/rebuild-dependencies.sh](Scripts/rebuild-dependencies.sh) describe su reconstrucción.
 
-Este proyecto no es un producto oficial de Apple, Ivanti ni de la entidad emisora del DNIe. No se ha usado código de McDNIe.
+Este proyecto no es un producto oficial de Apple, Ivanti ni de la entidad emisora del DNIe. 
 
 ## Autoría y contacto
 
-Responsable del proyecto: **RPastor**. Desarrollo con asistencia de **GPT**. Consultas y sugerencias: [GitHub Issues](https://github.com/bashrc0/DNIeNativeBridge/issues). Los componentes originales mantienen su autoría y licencias.
+Responsable del proyecto: **bashrc0**. Desarrollo con asistencia de **GPT**. Consultas y sugerencias: [GitHub Issues](https://github.com/bashrc0/DNIeNativeBridge/issues). Los componentes originales mantienen su autoría y licencias.
